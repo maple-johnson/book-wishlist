@@ -1,0 +1,21 @@
+html{
+    background-color: darkslateblue;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+#book {
+    background-color: lavender;
+    border: solid;
+    border-radius: 1px;
+}
+
+#button {
+    background-color: lightsalmon;
+    border-color: lightsalmon;
+    border-radius: 5px;
+}

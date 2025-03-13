@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wishlisted Books</title>
+        <link rel="stylesheet" href="/styles/summary.css">
     </head>
 
     <body>
@@ -14,10 +15,12 @@
             <h1>Wishlisted Books</h1>
 
             <% for (let i = 0; i < wishlist.length; i++) { %>
-                <h3><%= wishlist[i].bookTitle %></h3>
-                <hr>
-                <p><b>Comments:</b> <%= wishlist[i].bookComments %></p>
-                <p><b>Rating:</b> <%= wishlist[i].bookRating %></p>
+                <div id="book">
+                    <h3><%= wishlist[i].bookTitle %></h3>
+                    <hr>
+                    <p><b>Comments:</b> <%= wishlist[i].bookComments %></p>
+                    <p><b>Rating:</b> <%= wishlist[i].bookRating %></p>
+                </div>
             <% } %>
 
             <br>
@@ -25,6 +28,8 @@
             <form action="/" method="get">
                 <button type="submit" id="button">Add Another Book</button>
             </form>
+
+            <br>
 
         </div>
 
