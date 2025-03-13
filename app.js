@@ -16,7 +16,9 @@ app.get('/', (req, res) => {
 
 app.post('/summary', (req, res) => {
     const book = {
-        //
+        bookTitle: req.body.bookTitle,
+        bookComments: req.body.bookComments,
+        bookRating: req.body.bookRating
     };
 
     //  Validation
