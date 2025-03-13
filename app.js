@@ -1,5 +1,5 @@
 import express from "express";
-// Import Validation
+import { validateForm } from "./services/validation.js";
 
 const app = express();
 const PORT = 3000;
@@ -21,7 +21,12 @@ app.post('/summary', (req, res) => {
         bookRating: req.body.bookRating
     };
 
-    //  Validation
+    const result  = validateForm(book);
+    if(!result.isValid) {
+        console.log(result.errors);
+        res.send(result.errors);
+        return;
+    }
 
     wishlist.push(book);
     res.render('summary', {wishlist});
