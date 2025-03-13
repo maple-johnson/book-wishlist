@@ -1,0 +1,24 @@
+html {
+    background-color: darkslateblue;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+legend {
+    font-weight: bold;
+}
+
+#button {
+    background-color: lightsalmon;
+    border-color: lightsalmon;
+    border-radius: 5px;
+}
+
+.field {
+    border-style: none;
+}

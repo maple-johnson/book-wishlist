@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
+        <link rel="stylesheet" href="/styles/home.css">
     </head>
 
     <body>
@@ -13,7 +14,7 @@
             <h1>Book Wishlist</h1>
 
             <form action="summary" method="post">
-                <fieldset>
+                <fieldset class="field">
                     <legend>Book Title:</legend>
                     <label>
                         <input type="text" name="bookTitle">
@@ -22,7 +23,7 @@
 
                 <br>
 
-                <fieldset>
+                <fieldset class="field">
                     <legend>Comments:</legend>
                     <label>
                         <textarea name="bookComments"></textarea>
@@ -31,7 +32,7 @@
 
                 <br>
 
-                <fieldset>
+                <fieldset class="field">
                     <legend>Rating:</legend>
                     <select name="bookRating">
                         <option value="none">-- Please Select A Rating --</option>
@@ -48,6 +49,8 @@
                 <button type="submit" id="button">Submit Book</button>
 
             </form>
+
+            <br>
 
         </div>
 
