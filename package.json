@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The app will allow users to submit book  titles, comments, and ratings through a form and displayh the submitted data on a summary page.",
   "main": "app.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

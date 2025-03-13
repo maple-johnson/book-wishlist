@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
     </head>
+
     <body>
-        <h1>Book Wishlist</h1>
+
+        <div>
+            <h1>Book Wishlist</h1>
+
+            <form action="summary" method="post">
+                <fieldset>
+                    <legend>Book Title:</legend>
+                    <label>
+                        <input type="text" name="bookTitle">
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Comments:</legend>
+                    <label>
+                        <textarea name="bookComments"></textarea>
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Rating:</legend>
+                    <select name="bookRating">
+                        <option value="none">-- Please Select A Rating --</option>
+                        <option value="One Star">One Star</option>
+                        <option value="Two Stars">Two Stars</option>
+                        <option value="Three Stars">Three Stars</option>
+                        <option value="Four Stars">Four Stars</option>
+                        <option value="Five Stars">Five Stars</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <button type="submit" id="button">Submit Book</button>
+
+            </form>
+
+        </div>
+
     </body>
+
 </html>
