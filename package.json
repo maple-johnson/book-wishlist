@@ -1,0 +1,26 @@
+{
+  "name": "book-wishlist",
+  "version": "1.0.0",
+  "description": "The app will allow users to submit book  titles, comments, and ratings through a form and displayh the submitted data on a summary page.",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maple-johnson/book-wishlist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maple-johnson/book-wishlist/issues"
+  },
+  "homepage": "https://github.com/maple-johnson/book-wishlist#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
